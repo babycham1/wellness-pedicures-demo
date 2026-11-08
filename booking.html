@@ -222,7 +222,7 @@ const groups=[
  ]}
 ];
 const all=groups.flatMap(g=>g.services);
-document.getElementById('menu').innerHTML=groups.map(g=>`<fieldset style="all:unset;display:block" class="group"><legend style="all:unset;display:block"><h2>${g.title}</h2></legend>${g.services.map(s=>`
+document.getElementById('menu').innerHTML=groups.map(g=>`<fieldset style="all:unset;display:block;margin-bottom:44px" class="group"><legend style="all:unset;display:block"><h2>${g.title}</h2></legend>${g.services.map(s=>`
   <label class="svc" id="${s.id}">
     <input type="radio" name="service" value="${s.id}">
     <div class="body">
