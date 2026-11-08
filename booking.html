@@ -1,0 +1,270 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta name="robots" content="noindex">
+<title>Book an Appointment | Wellness Pedicures</title>
+<meta name="description" content="Choose your medical pedicure, nail restoration, or nail care treatment and book with Wellness Pedicures in Davie, FL.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Figtree:wght@400;500;600;700&family=Newsreader:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&display=swap" rel="stylesheet">
+<style>
+:root{
+  --plum:#3b2d85; --plum-deep:#251b5c; --lilac:#efecf8; --paper:#fbfafd;
+  --ink:#201a38; --muted:#5b5570; --line:#dfdaec; --teal:#0b6f6c; --teal-soft:#d9f0ee;
+  --serif:"Newsreader",Georgia,serif; --sans:"Figtree",system-ui,sans-serif;
+  --gutter:clamp(16px,5vw,64px); --section:clamp(64px,9vw,120px);
+}
+*{box-sizing:border-box}
+html{scroll-behavior:smooth;scroll-padding-top:136px}
+body{margin:0;background:var(--paper);color:var(--ink);font:400 17px/1.6 var(--sans);-webkit-font-smoothing:antialiased}
+img{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3{font-family:var(--serif);font-weight:400;line-height:1.08;margin:0;letter-spacing:-.015em;text-wrap:balance}
+h2{font-size:clamp(32px,4vw,44px)}
+p{margin:0}
+:focus-visible{outline:3px solid var(--teal);outline-offset:3px;border-radius:4px}
+.wrap{max-width:1240px;margin:0 auto;padding-inline:var(--gutter)}
+.eyebrow{font-size:14px;font-weight:600;color:var(--teal);margin-bottom:16px}
+.btn{display:inline-flex;align-items:center;justify-content:center;min-height:50px;padding:0 26px;border-radius:999px;background:var(--plum);color:#fff;font:600 16px var(--sans);text-decoration:none;border:1.5px solid var(--plum);cursor:pointer;transition:background .18s,color .18s,border-color .18s;text-align:center}
+.btn:hover{background:var(--plum-deep);border-color:var(--plum-deep)}
+.btn.ghost{background:transparent;color:var(--plum)}
+.btn.ghost:hover{background:var(--lilac);border-color:var(--plum)}
+
+.promo{background:var(--plum-deep);color:#fff;text-align:center;font-size:14px;font-weight:500;padding:9px 16px}
+header{position:sticky;top:0;z-index:20;background:rgba(251,250,253,.95);backdrop-filter:blur(10px);border-bottom:1px solid var(--line)}
+.bar{display:flex;align-items:center;justify-content:space-between;gap:24px;height:110px}
+.logo img{height:104px;width:auto}
+nav{display:flex;align-items:center;gap:30px}
+nav a:not(.btn){text-decoration:none;font-weight:500;font-size:16px}
+nav a:not(.btn):hover{color:var(--plum);text-decoration:underline;text-underline-offset:5px}
+.menu-btn{display:none;min-height:44px;padding:0 16px;background:none;border:1.5px solid var(--line);border-radius:999px;font:600 15px var(--sans);color:var(--ink);cursor:pointer}
+
+.intro{padding-block:clamp(48px,6vw,80px) clamp(32px,4vw,48px)}
+h1{font-size:clamp(46px,6.4vw,80px);color:var(--plum-deep)}
+h1 em{color:var(--teal);font-style:italic}
+.lede{font-size:clamp(18px,1.6vw,21px);color:var(--muted);max-width:36em;margin-top:20px}
+.lede a{color:var(--plum);font-weight:600}
+
+.layout{display:grid;grid-template-columns:minmax(0,7fr) minmax(0,4fr);gap:clamp(32px,5vw,72px);align-items:start;padding-bottom:var(--section)}
+.group{margin-bottom:44px}
+.group:last-child{margin-bottom:0}
+.group h2{color:var(--plum-deep);margin-bottom:6px}
+.group>p{color:var(--muted);margin-bottom:18px}
+.svc{display:flex;gap:16px;padding:20px;margin-top:12px;background:#fff;border:1.5px solid var(--line);border-radius:14px;cursor:pointer;transition:border-color .15s}
+.svc:hover{border-color:var(--plum)}
+.svc:has(input:checked){border-color:var(--teal);box-shadow:inset 0 0 0 1px var(--teal)}
+.svc input{flex:none;width:22px;height:22px;margin:4px 0 0;accent-color:var(--teal);cursor:pointer}
+.svc .body{flex:1;min-width:0}
+.svc .top{display:flex;justify-content:space-between;gap:20px;align-items:baseline}
+.svc h3{font-size:25px;color:var(--plum-deep)}
+.svc .price{flex:none;text-align:right;font-weight:600;font-size:17px;white-space:nowrap}
+.svc .meta{font-size:15px;color:var(--teal);font-weight:600;margin-top:4px}
+.svc .sum{color:var(--muted);margin-top:8px;font-size:16px}
+.svc .more{display:none;margin-top:12px;font-size:16px}
+.svc input:checked + .body .more{display:block}
+.svc .more p+p{margin-top:10px}
+.callout{margin-top:12px;padding:12px 14px;background:var(--teal-soft);color:#084f4d;border-radius:10px;font-size:15px;font-weight:500}
+.callout a{color:inherit;font-weight:700;text-underline-offset:2px}
+
+.summary{position:sticky;top:134px;background:var(--lilac);border-radius:20px;padding:clamp(24px,3vw,36px)}
+.summary .label{font-size:14px;font-weight:600;color:var(--teal)}
+.summary h2{font-size:32px;color:var(--plum-deep);margin-top:8px}
+.summary .facts{display:flex;justify-content:space-between;gap:16px;margin-top:14px;padding-top:14px;border-top:1px solid #d3cce8;font-weight:600}
+.summary .empty{color:var(--muted);margin-top:10px}
+.summary .btn{width:100%;margin-top:18px}
+.summary .btn+.btn{margin-top:10px}
+.summary small{display:block;margin-top:14px;font-size:14px;line-height:1.5;color:var(--muted)}
+
+.visit{background:var(--lilac);padding-block:clamp(56px,7vw,88px)}
+.visit-grid{display:grid;grid-template-columns:1fr 1fr;gap:clamp(32px,6vw,88px)}
+.visit h2{color:var(--plum-deep);margin-bottom:22px}
+.info{display:grid;gap:18px;margin:0}
+.info dt{font-size:14px;font-weight:600;color:var(--teal)}
+.info dd{margin:2px 0 0;font-size:18px}
+.info a{display:inline-block;padding-block:9px;text-underline-offset:3px;overflow-wrap:anywhere}
+.hours{list-style:none;margin:0;padding:0}
+.hours li{display:flex;justify-content:space-between;gap:16px;padding:11px 0;border-bottom:1px solid #d3cce8}
+.hours li.today{font-weight:700;color:var(--plum-deep)}
+
+.site-foot{background:var(--plum-deep);color:#d3cfe8;padding-block:40px;font-size:15px}
+.foot-row{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px 32px;align-items:center}
+.socials{display:flex;flex-wrap:wrap;gap:6px 20px}
+.socials a{color:#fff;text-underline-offset:3px;padding:10px 0}
+.demo-note{margin-top:18px;font-size:14px;color:#b5aed3}
+
+.sel-bar{display:none}
+
+@media (max-width:980px){
+  html{scroll-padding-top:98px}
+  .bar{height:86px}
+  .logo img{height:80px}
+  .menu-btn{display:block}
+  nav{display:none;position:absolute;left:0;right:0;top:100%;flex-direction:column;align-items:stretch;gap:0;background:var(--paper);border-bottom:1px solid var(--line);padding:6px var(--gutter) 16px}
+  nav.open{display:flex}
+  nav a:not(.btn){padding:13px 0;font-size:18px}
+  nav .btn{margin-top:8px}
+  .layout{grid-template-columns:1fr}
+  .summary{display:none}
+  .visit-grid{grid-template-columns:1fr}
+  body{padding-bottom:84px}
+  .sel-bar{display:flex;align-items:center;justify-content:space-between;gap:14px;position:fixed;left:0;right:0;bottom:0;z-index:20;padding:10px 16px;background:var(--paper);border-top:1px solid var(--line)}
+  .sel-bar .txt{min-width:0;font-size:14px;line-height:1.3;color:var(--muted)}
+  .sel-bar b{display:block;font-size:16px;color:var(--ink);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
+  .sel-bar .btn{flex:none;padding:0 20px}
+}
+@media (max-width:480px){
+  .svc{padding:16px;gap:12px}
+  .svc h3{font-size:23px}
+  .svc .top{flex-direction:column;gap:2px}
+  .svc .price{text-align:left}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}*{transition:none!important}}
+</style>
+</head>
+<body>
+<div class="promo">Enjoy 10% off this month. Refer a friend and save!</div>
+
+<header>
+  <div class="wrap bar">
+    <a class="logo" href="index.html" aria-label="Wellness Pedicures home"><img src="https://img1.wsimg.com/isteam/ip/32b01113-af95-47be-ad0e-20ae0de2095b/purple-black.png/:/rs=w:449,h:208,cg:true,m/cr=w:449,h:208/qt=q:95" alt="Wellness Pedicures, Medi-Pedi" width="225" height="104"></a>
+    <button class="menu-btn" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav id="nav" aria-label="Main">
+      <a href="index.html#services">Services</a>
+      <a href="index.html#waterless">Why waterless</a>
+      <a href="index.html#gallery">Gallery</a>
+      <a href="index.html#team">Our team</a>
+      <a href="index.html#visit">Visit</a>
+      <a class="btn" href="booking.html" aria-current="page">Book now</a>
+    </nav>
+  </div>
+</header>
+
+<main>
+  <section class="intro">
+    <div class="wrap">
+      <p class="eyebrow">Book an appointment</p>
+      <h1>Choose your <em>treatment.</em></h1>
+      <p class="lede">Select a service to see what's included and anything we need before your visit. Not sure what you need? <a href="#consultation">Start with a consultation</a> or call <a href="tel:9545944771">(954) 594-4771</a>.</p>
+    </div>
+  </section>
+
+  <div class="wrap layout">
+    <form id="menu" onsubmit="return false" aria-label="Service menu"></form>
+    <aside class="summary" aria-live="polite" id="summary"></aside>
+  </div>
+
+  <section class="visit" id="location">
+    <div class="wrap visit-grid">
+      <div>
+        <h2>Location</h2>
+        <dl class="info">
+          <div><dt>Davie office</dt><dd>5400 S University Dr, Ste 402<br>Davie, FL 33328</dd></div>
+          <div><dt>Phone</dt><dd><a href="tel:9545944771">(954) 594-4771</a></dd></div>
+          <div><dt>Email</dt><dd><a href="mailto:wellnesspedicuresbyjay@gmail.com">wellnesspedicuresbyjay@gmail.com</a></dd></div>
+        </dl>
+      </div>
+      <div>
+        <h2>Hours</h2>
+        <ul class="hours" id="hours"></ul>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="site-foot">
+  <div class="wrap">
+    <div class="foot-row">
+      <span>&copy; 2026 Wellness Pedicures. All rights reserved.</span>
+      <div class="socials">
+        <a href="https://www.facebook.com/365862659938129" target="_blank" rel="noopener">Facebook</a>
+        <a href="https://www.instagram.com/wellness_pedicures/" target="_blank" rel="noopener">Instagram</a>
+        <a href="https://www.tiktok.com/@wellnesspedicures" target="_blank" rel="noopener">TikTok</a>
+        <a href="https://www.yelp.com/biz/wellness-pedicures-by-jay-davie" target="_blank" rel="noopener">Yelp</a>
+      </div>
+    </div>
+    <p class="demo-note">Design demo for client review. Not the live website.</p>
+  </div>
+</footer>
+
+<div class="sel-bar" id="selbar"></div>
+
+<script>
+const SQUARE='https://book.squareup.com/appointments/kpx4hksbxa2urm/location/NHGDH1QB0M5Q4/services';
+const SQUARE_IDS={rejuvenate:'A3CISFOERU26AYASS5APQETE','callus-therapy':'SMVWTTPOMVOGPLJBYDMW63JM','callus-addon':'HQJ4X4Q54RTEMRPLFDZTQUTM',diabetic:'RIZ7VN4FNEAQONGAO7VZPPFG',keryflex:'6IOFABLIFXWUVHY5JE2FPQ2Z',nanoflex:'HXDNH6WUNF3WN65K6ZRCYTFS',onyfix:'BQ5D5E7D2OID4VBXYNABRUUJ',consultation:'CUIJIH5XCJUCG6GJMAO7JH7X',manicure:'SJ5CJPNLJCNHJJZD6WFMLTFS',french:'DRYO25EVGDM77XNQXFXGO2HQ'};
+const TEXT='<a href="sms:9545944771">954-594-4771</a>';
+const DEPOSIT='Deposit required before accepting appointments. All deposits are non-refundable. In the event of a no-call, no-show, a new deposit will be required to book any future appointments.';
+const groups=[
+ {title:'Pedicures & foot care',services:[
+  {id:'rejuvenate',name:'Rejuvenate Healthy Feet',price:'$95.00',time:'1 hr 30 mins',sum:'Our Waterless Wellness Pedicure, a hygienic and moisturizing treatment using diabetic-friendly products based on botanicals and essential oils.',
+   more:['Includes an e-file for meticulous cuticle grooming, nail trimming and shaping, nail debridement, minimal callus reduction, sugar scrub exfoliation or foot mask, steamed towels, relaxing foot massage, and regular polish application.','Gel polish application add-on: $15.'],notes:[DEPOSIT]},
+  {id:'callus-therapy',name:"Sash'e Callus Therapy (Only)",price:'$70.00',time:'45 mins',sum:'A non-invasive, waterless callus treatment focused on the reduction of thick, dry, or callused skin.',
+   more:['Includes professional exfoliation, medical-grade softening agents, and deep hydration to improve skin texture.'],notes:[`Pictures and assessment must be submitted via text to ${TEXT} before booking.`]},
+  {id:'callus-addon',name:"Sash'e Callus Treatment (Add-on)",price:'$25.00',time:'30 mins',sum:'An upgraded treatment added to an existing Waterless Pedicure.',
+   more:['A non-invasive callus treatment with professional exfoliation, medical-grade softening agents, and deep hydration.']},
+  {id:'diabetic',name:'Diabetic Routine Nail Care',price:'$65',time:'30 mins',sum:'Specialized nail grooming tools designed for individuals with diabetes and autoimmune diseases.',
+   more:['Service includes cut nails, file, and buff.'],notes:['This service does not include a wellness pedicure. Deposit required before accepting appointment.']}
+ ]},
+ {title:'Nail restoration & correction',services:[
+  {id:'keryflex',name:'KeryFlex Toe Nail Restoration Anti-Fungal',price:'Ask for pricing',time:'45 mins+',sum:'Guided by our Podiatry Medical Director, KeryFlex restores damaged or fungal nails with a natural-looking, durable resin that lasts up to 8 weeks.',more:['Listed for one hallux (big) toe.']},
+  {id:'nanoflex',name:'Nano Flex Toe Nail Restoration',price:'$85.00+',time:'45 mins+',sum:'Toe nail restoration service.'},
+  {id:'onyfix',name:'Onyfix Ingrown Nail Correction, 2nd Toe',price:'$45.00+',time:'30 mins',sum:'A painless, non-invasive system designed to treat ingrown and involuted (curved) toenails without surgery.',
+   more:["A composite band is applied directly to the nail plate, gently guiding the nail back to its natural, healthy shape over time through the nail's own growth process. Safe for clients with diabetes, poor circulation, and sensitive feet."]}
+ ]},
+ {title:'Consultation',services:[
+  {id:'consultation',name:'In-Person Consultation',price:'$50.00',time:'30 mins',sum:'An assessment of your toenails, the interdigital area, and the skin of your feet, to determine the service and pricing for your specific case.',
+   notes:['Service cannot be booked for the same day unless pre-scheduled when the consultation is booked.']}
+ ]},
+ {title:'Manicures & nail art',services:[
+  {id:'manicure',name:'Traditional Classic Manicure',price:'$30.00',time:'40 mins',sum:'A timeless manicure focused on clean, beautifully groomed hands and nails.',more:['Includes nail shaping, cuticle care, gentle hand massage, and your choice of polish.']},
+  {id:'french',name:'French Nail Art',price:'Price varies',time:'30 mins',sum:'French nails from $25.',notes:[`For approval, please text your inspiration picture to ${TEXT}.`]}
+ ]}
+];
+const all=groups.flatMap(g=>g.services);
+document.getElementById('menu').innerHTML=groups.map(g=>`<fieldset style="all:unset;display:block" class="group"><legend style="all:unset;display:block"><h2>${g.title}</h2></legend>${g.services.map(s=>`
+  <label class="svc" id="${s.id}">
+    <input type="radio" name="service" value="${s.id}">
+    <div class="body">
+      <div class="top"><h3>${s.name}</h3><span class="price">${s.price}</span></div>
+      <p class="meta">${s.time}</p>
+      <p class="sum">${s.sum}</p>
+      <div class="more">${(s.more||[]).map(p=>`<p>${p}</p>`).join('')}${(s.notes||[]).map(n=>`<p class="callout">${n}</p>`).join('')}</div>
+    </div>
+  </label>`).join('')}</fieldset>`).join('');
+
+const summary=document.getElementById('summary'),bar=document.getElementById('selbar');
+const CALL='<a class="btn ghost" href="tel:9545944771">Call us</a>';
+function show(s){
+  if(!s){
+    summary.innerHTML=`<p class="label">Your appointment</p><h2>Nothing selected yet</h2><p class="empty">Choose a treatment to continue.</p>${CALL}`;
+    bar.innerHTML=`<div class="txt"><b>Choose a treatment</b>or call to ask us first</div>${CALL}`;
+    return;
+  }
+  const link=`${SQUARE}/${SQUARE_IDS[s.id]}`;
+  const go=`<a class="btn" href="${link}" target="_blank" rel="noopener">Choose date and time</a>`;
+  summary.innerHTML=`<p class="label">Your appointment</p><h2>${s.name}</h2><div class="facts"><span>${s.time}</span><span>${s.price}</span></div>${go}${CALL}<small>Next, confirm this treatment and pick your date and time on our secure Square booking page.</small>`;
+  bar.innerHTML=`<div class="txt"><b>${s.name}</b>${s.price} &middot; ${s.time}</div><a class="btn" href="${link}" target="_blank" rel="noopener">Continue</a>`;
+}
+document.getElementById('menu').addEventListener('change',e=>show(all.find(s=>s.id===e.target.value)));
+show(null);
+
+function fromHash(){
+  const s=all.find(x=>x.id===location.hash.slice(1));
+  if(!s)return;
+  document.querySelector(`input[value="${s.id}"]`).checked=true;show(s);
+  document.getElementById(s.id).scrollIntoView({behavior:'instant'});
+}
+addEventListener('hashchange',fromHash);fromHash();
+addEventListener('load',fromHash);
+
+const hours=[['Monday','10:00 am to 5:00 pm'],['Tuesday','10:00 am to 7:00 pm'],['Wednesday','10:00 am to 5:00 pm'],['Thursday','10:00 am to 7:00 pm'],['Friday','10:00 am to 5:00 pm'],['Saturday','Closed'],['Sunday','Closed']];
+const today=(new Date().getDay()+6)%7;
+document.getElementById('hours').innerHTML=hours.map((h,i)=>`<li${i===today?' class="today"':''}><span>${h[0]}</span><span>${h[1]}</span></li>`).join('');
+
+const menu=document.querySelector('.menu-btn'),nav=document.getElementById('nav');
+menu.onclick=()=>{const o=nav.classList.toggle('open');menu.setAttribute('aria-expanded',o);menu.textContent=o?'Close':'Menu'};
+nav.querySelectorAll('a').forEach(a=>a.addEventListener('click',()=>{nav.classList.remove('open');menu.setAttribute('aria-expanded',false);menu.textContent='Menu'}));
+</script>
+</body>
+</html>
